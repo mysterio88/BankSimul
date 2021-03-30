@@ -13,10 +13,10 @@
 static bool createConnection()
 {
     QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
-    db.setHostName("mysli.oamk.fi");
-    db.setDatabaseName("opisk_t9keto00");
-    db.setUserName("t9keto00");
-    db.setPassword("azN8uqmsH6tbppDr");
+    db.setHostName("hostname");
+    db.setDatabaseName("database nimi");
+    db.setUserName("username");
+    db.setPassword("password");
     if (!db.open())
     {
         QMessageBox::critical(0, qApp->tr("Cannot open database"),
